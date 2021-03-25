@@ -51,7 +51,203 @@ ga('create', 'UA-7935029-3', 'auto');
 ga('send', 'pageview');
 }
 </script>
+<div class="content is2d">
+      <div id="lichess">
+        
+<div id="call_boxes">
+  
+</div>
+<div class="lobby_and_ground">
+  
+  
+	<div id="hooks_wrap"></div>
 
+  <div id="start_buttons" class="lichess_ground">
+    <h2 class="start_game test">Start A Game</h2>
+    <a class="fat button cmg-vs-random config_hook hint--bottom" href="/setup/hook" onclick="trackEvent(&quot;Chess Game Type&quot;, &quot;Random opponent&quot;, &quot;Random opponent&quot;, 0);">CREATE A NEW GAME</a>
+    <a class="fat button cmg-vs-computer config_ai hint--bottom" href="/setup/ai" onclick="trackEvent(&quot;Chess Game Type&quot;, &quot;Play vs Computer&quot;, &quot;Play vs Computer&quot;, 0);">Play vs. computer</a>
+    <a class="fat button cmg-vs-friend config_friend hint--bottom" href="/setup/friend" onclick="trackEvent(&quot;Chess Game Type&quot;, &quot;Play a Friend&quot;, &quot;Play a Friend&quot;, 0);">Play a friend</a>
+  </div>
+  <div class="player-active-block">
+    <p><span class="online_players">2377</span>Players</p>
+    <p><span class="now_playing">1046</span>Active games</p>
+  </div>
+  <br>
+  <style type="text/css">
+    .player-active-block{margin-top:0px !important;/* align active-player-block with top of board*/}
+    .video-sidebar-container{
+      width: 190px;
+      height: 497px;
+      background: #162b3c;
+      border-radius: 6px;
+      float: right;
+      top: -495px;
+      position: relative;
+      text-align: center;
+    }
+    .video-sidebar-container-header{
+      height: 60px;
+      background-color: #016066;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      font-family: "ProximaNova";
+      font-size: 16px;
+    }
+    .video-sidebar-container-header h1{
+      position: relative;
+      float: left;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-transform: uppercase;
+      font-family: 'ProximaNova';
+      color: #a5d1c2;
+      font-weight: bold;
+      line-height: 19px;
+    }
+    .video-sidebar-item{
+      margin-top: 30px;
+      padding: 0px 15px;
+    }
+    .video-sidebar-item img{
+      border: 2px solid #FFF;
+      opacity: 0.7;
+    }
+    .video-sidebar-item:hover img{
+      border: 2px solid #5ccffb;
+      opacity: 1.0;
+    }
+    .video-sidebar-item:hover h2{
+      color: #5ccffb;
+    }
+    .video-sidebar-item h2{
+      margin-top: 3px;
+      font-size: 13px;
+      color: #00a9ff;
+    }
+    .all-videos-link{
+      height: 60px;
+    }
+    .all-videos-link a{
+      position: relative;
+      float: left;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FFF;
+    }
+    .all-videos-link a:hover{
+      color: #5ccffb;
+    }
+	#coolmathgames-home {
+      font: 20px 'ProximaNova', 'Noto Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
+      color: #31b8fd;
+	  margin-left: 4px;
+    }
+	#coolmathgames-home-link {
+      float: right;
+	  position: relative;
+	  top:-460px;
+	  right:10px;
+    }
+  </style>
+  <br>
+  </div>
+  <div id="coolmathgames-home-link" style="display:none;">
+    <img src="/assets/images/icons/Home_Icon.png">
+    <a id="coolmathgames-home" href="http://www.coolmath-games.com">Coolmath-Games</a>
+  </div>
+  <div id="chess-video-sidebar" class="video-sidebar-container" style="display:block;">
+    <div class="video-sidebar-container-header">
+      <h1>Chess Master <br>Tips &amp; Tricks</h1>
+    </div>
+    <div class="video-sidebar-item">
+      <a href="//www.coolmath-games.com/chess-videos/start-the-game-strong-knights-and-bishops" target="_parent">
+        <img src="//www.coolmath-games.com/sites/cmatgame/files/video-play-icons/start_the_game_strong_play.png ">
+          <h2>Start The Game Strong: Knights and Bishops</h2>
+      </a>
+    </div> 
+    <div class="video-sidebar-item">
+      <a href="//www.coolmath-games.com/chess-videos/why-you-should-castle" target="_parent">
+        <img src="//www.coolmath-games.com/sites/cmatgame/files/video-play-icons/why_you_should_castle_play.png">
+        <h2>Why You Should Castle</h2>
+      </a>
+    </div>
+    <div class="video-sidebar-item">
+      <a href="//www.coolmath-games.com/chess-videos/five-winning-attacks" target="_parent">
+        <img src="//www.coolmath-games.com/sites/cmatgame/files/video-play-icons/five_winning_attacks_play.png">
+        <h2>Five Winning Attacks</h2>
+      </a>
+    </div>
+    <div class="all-videos-link">
+      <a href="//www.coolmath-games.com/chess-videos" target="_parent">ALL CHESS VIDEOS &gt; </a>
+    </div>
+  </div>
+</div>
+
+        <div id="top" class="is2d" style="display: none;">
+        <a id="reconnecting" class="fright link" onclick="location.reload();" data-icon="B">&nbsp;Reconnecting</a>
+	
+        <div id="themepicker" class="fright">
+          <a id="themepicker_toggle" class="toggle icon link hint--bottom-left" data-hint="Theming" data-url="/themepicker">
+            <img class="paintbrush" src="//chess.coolmath-games.com/assets/images/icons/paintbrush.png">
+          </a>
+        </div>
+        <div id="sound_control" class="fright">
+          <a id="sound_state" class="toggle link hint--bottom-left" data-hint="Sound">
+            <span class="is2 on" data-icon="#"></span>
+            <span class="is2 off" data-icon="$"></span>
+          </a>
+          <div class="dropdown">
+            <div class="slider"></div>
+            <form class="selector" action="/pref/soundSet">
+            
+            <div class="silent">
+              <input id="soundSet_silent" checked="" class="active" type="radio" value="silent" name="soundSet">
+              <label for="soundSet_silent">Silent</label>
+            </div>
+            
+            <div class="standard">
+              <input id="soundSet_standard" type="radio" value="standard" name="soundSet">
+              <label for="soundSet_standard">Standard</label>
+            </div>
+            
+            <div class="piano">
+              <input id="soundSet_piano" type="radio" value="piano" name="soundSet">
+              <label for="soundSet_piano">Piano</label>
+            </div>
+            
+            <div class="nes">
+              <input id="soundSet_nes" type="radio" value="nes" name="soundSet">
+              <label for="soundSet_nes">NES</label>
+            </div>
+            
+            <div class="sfx">
+              <input id="soundSet_sfx" type="radio" value="sfx" name="soundSet">
+              <label for="soundSet_sfx">SFX</label>
+            </div>
+            
+            <div class="futuristic">
+              <input id="soundSet_futuristic" type="radio" value="futuristic" name="soundSet">
+              <label for="soundSet_futuristic">Futuristic</label>
+            </div>
+            
+            <div class="robot">
+              <input id="soundSet_robot" type="radio" value="robot" name="soundSet">
+              <label for="soundSet_robot">Robot</label>
+            </div>
+            
+            <div class="music">
+              <input id="soundSet_music" type="radio" value="music" name="soundSet">
+              <label for="soundSet_music">Music</label>
+            </div>
+            
+            </form>
+          </div>
+        </div>
+        
+      </div>
+      </div>
 
 </body>
 </html>
