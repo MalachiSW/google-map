@@ -44,19 +44,7 @@
 	//	tileSize: 512,
 	//	zoomOffset: -1
 	//}).addTo(mymap);
-	var baseMaps = {
-           "OSM ": osm,
-           "Google": google
-        };
-
-        var overlayMaps = {
-            "Marker": marker,
-            "College": college,
-            "College 1": college1
-       };
-	
-
-       L.control.layers(baseMaps, overlayMaps).addTo(mymap);
+        L.control.layers(baseMaps, overlayMaps).addTo(mymap);
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	    maxNativeZoom: 19,	
 	    maxZoom: 20,
